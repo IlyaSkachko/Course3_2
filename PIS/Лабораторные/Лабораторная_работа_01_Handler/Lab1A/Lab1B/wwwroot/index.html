@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab1B</title>
+</head>
+<body>
+    <button id="startButton">Старт</button>
+    <button id="stopButton">Стоп</button>
+
+    <script>
+
+        let socket;
+
+
+        document.getElementById("startButton").addEventListener("click", function() {
+            socket = new WebSocket("wss://localhost:7222/ws");
+            socket.onmessage = function(event) {
+                var messageElement = document.createElement("p");
+                messageElement.textContent = event.data;
+                document.body.appendChild(messageElement);
+            };
+        });
+
+        document.getElementById("stopButton").addEventListener("click", function() {
+            if (socket) {
+                socket.close();
+                socket = null;
+            }
+        });
+    </script>
+</body>
+</html>

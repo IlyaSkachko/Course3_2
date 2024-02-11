@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "1lUyHt9JX4jsAipjLiXjgyAKEabZBfl1rHzPe0cfWvw=",
+  "Source": "Lab1B",
+  "BasePath": "_content/Lab1B",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Lab1B\\wwwroot",
+      "Source": "Lab1B",
+      "ContentRoot": "D:\\UNIVER\\Программирование интернет-серверов\\Лабораторные\\Лабораторная_работа_01_Handler\\Lab1A\\Lab1B\\wwwroot\\",
+      "BasePath": "_content/Lab1B",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\UNIVER\\Программирование интернет-серверов\\Лабораторные\\Лабораторная_работа_01_Handler\\Lab1A\\Lab1B\\wwwroot\\index.html",
+      "SourceId": "Lab1B",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\UNIVER\\Программирование интернет-серверов\\Лабораторные\\Лабораторная_работа_01_Handler\\Lab1A\\Lab1B\\wwwroot\\",
+      "BasePath": "_content/Lab1B",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
+}

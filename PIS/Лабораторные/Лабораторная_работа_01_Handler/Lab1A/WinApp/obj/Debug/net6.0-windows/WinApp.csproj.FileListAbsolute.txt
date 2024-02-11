@@ -1,0 +1,16 @@
+D:\UNIVER\ПИС\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\WinApp\bin\Debug\net6.0-windows\WinApp.exe
+D:\UNIVER\ПИС\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\WinApp\bin\Debug\net6.0-windows\WinApp.deps.json
+D:\UNIVER\ПИС\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\WinApp\bin\Debug\net6.0-windows\WinApp.runtimeconfig.json
+D:\UNIVER\ПИС\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\WinApp\bin\Debug\net6.0-windows\WinApp.dll
+D:\UNIVER\ПИС\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\WinApp\bin\Debug\net6.0-windows\WinApp.pdb
+D:\UNIVER\ПИС\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\WinApp\obj\Debug\net6.0-windows\WinApp.Form1.resources
+D:\UNIVER\ПИС\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\WinApp\obj\Debug\net6.0-windows\WinApp.csproj.GenerateResource.cache
+D:\UNIVER\ПИС\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\WinApp\obj\Debug\net6.0-windows\WinApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\UNIVER\ПИС\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\WinApp\obj\Debug\net6.0-windows\WinApp.AssemblyInfoInputs.cache
+D:\UNIVER\ПИС\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\WinApp\obj\Debug\net6.0-windows\WinApp.AssemblyInfo.cs
+D:\UNIVER\ПИС\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\WinApp\obj\Debug\net6.0-windows\WinApp.csproj.CoreCompileInputs.cache
+D:\UNIVER\ПИС\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\WinApp\obj\Debug\net6.0-windows\WinApp.dll
+D:\UNIVER\ПИС\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\WinApp\obj\Debug\net6.0-windows\refint\WinApp.dll
+D:\UNIVER\ПИС\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\WinApp\obj\Debug\net6.0-windows\WinApp.pdb
+D:\UNIVER\ПИС\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\WinApp\obj\Debug\net6.0-windows\WinApp.genruntimeconfig.cache
+D:\UNIVER\ПИС\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\WinApp\obj\Debug\net6.0-windows\ref\WinApp.dll

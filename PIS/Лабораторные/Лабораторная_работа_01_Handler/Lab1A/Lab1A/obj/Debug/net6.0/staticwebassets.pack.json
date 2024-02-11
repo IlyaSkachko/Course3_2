@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\UNIVER\\ПИС\\Лабораторные\\Лабораторная_работа_01_Handler\\Lab1A\\Lab1A\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "D:\\UNIVER\\ПИС\\Лабораторные\\Лабораторная_работа_01_Handler\\Lab1A\\Lab1A\\wwwroot\\task6.html",
+      "PackagePath": "staticwebassets\\task6.html"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Lab1A.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Lab1A.props",
+      "PackagePath": "build\\Lab1A.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Lab1A.props",
+      "PackagePath": "buildMultiTargeting\\Lab1A.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Lab1A.props",
+      "PackagePath": "buildTransitive\\Lab1A.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "Hash": "uvFYXBupTbo1jmKCgxxnAiFl9i43tgR1yVd337pwoU4=",
+  "Source": "Lab1A",
+  "BasePath": "_content/Lab1A",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Lab1A\\wwwroot",
+      "Source": "Lab1A",
+      "ContentRoot": "D:\\UNIVER\\ПИС\\Лабораторные\\Лабораторная_работа_01_Handler\\Lab1A\\Lab1A\\wwwroot\\",
+      "BasePath": "_content/Lab1A",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\UNIVER\\ПИС\\Лабораторные\\Лабораторная_работа_01_Handler\\Lab1A\\Lab1A\\wwwroot\\index.html",
+      "SourceId": "Lab1A",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\UNIVER\\ПИС\\Лабораторные\\Лабораторная_работа_01_Handler\\Lab1A\\Lab1A\\wwwroot\\",
+      "BasePath": "_content/Lab1A",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "D:\\UNIVER\\ПИС\\Лабораторные\\Лабораторная_работа_01_Handler\\Lab1A\\Lab1A\\wwwroot\\task6.html",
+      "SourceId": "Lab1A",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\UNIVER\\ПИС\\Лабораторные\\Лабораторная_работа_01_Handler\\Lab1A\\Lab1A\\wwwroot\\",
+      "BasePath": "_content/Lab1A",
+      "RelativePath": "task6.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\task6.html"
+    }
+  ]
+}
