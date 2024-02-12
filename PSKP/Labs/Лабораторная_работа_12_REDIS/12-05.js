@@ -6,16 +6,18 @@ async function start() {
         .on("error", (err) => console.log("Redis Client Error", err))
         .connect();
 
-    console.log("Success");
+    console.log("START");
+    const intervalId = setInterval(async () => {
+        await publisher.publish("channel1", "Hello world!");
+    }, 3000);
 
-    publisher.publish(
-        "notification",
-        '{"message":"Hello world from Asgardian!"',
-        function () {
-            process.exit(0);
-        }
-    );
 
+    setTimeout(async () => {
+        clearInterval(intervalId);
+        await publisher.quit();
+    }, 15000);
+
+    publisher.on("end", () => {console.log("END");});
 }
 
 start();
