@@ -27,3 +27,32 @@ D:\UNIVER\Программирование интернет-серверов\Л�
 D:\UNIVER\Программирование интернет-серверов\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\Lab1B\obj\Debug\net6.0\Lab1B.pdb
 D:\UNIVER\Программирование интернет-серверов\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\Lab1B\obj\Debug\net6.0\Lab1B.genruntimeconfig.cache
 D:\UNIVER\Программирование интернет-серверов\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\Lab1B\obj\Debug\net6.0\ref\Lab1B.dll
+D:\UNIVER\all\PIS\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\Lab1B\bin\Debug\net6.0\appsettings.Development.json
+D:\UNIVER\all\PIS\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\Lab1B\bin\Debug\net6.0\appsettings.json
+D:\UNIVER\all\PIS\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\Lab1B\bin\Debug\net6.0\Lab1B.staticwebassets.runtime.json
+D:\UNIVER\all\PIS\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\Lab1B\bin\Debug\net6.0\Lab1B.exe
+D:\UNIVER\all\PIS\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\Lab1B\bin\Debug\net6.0\Lab1B.deps.json
+D:\UNIVER\all\PIS\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\Lab1B\bin\Debug\net6.0\Lab1B.runtimeconfig.json
+D:\UNIVER\all\PIS\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\Lab1B\bin\Debug\net6.0\Lab1B.dll
+D:\UNIVER\all\PIS\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\Lab1B\bin\Debug\net6.0\Lab1B.pdb
+D:\UNIVER\all\PIS\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\Lab1B\bin\Debug\net6.0\System.Net.WebSockets.WebSocketProtocol.dll
+D:\UNIVER\all\PIS\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\Lab1B\obj\Debug\net6.0\Lab1B.csproj.AssemblyReference.cache
+D:\UNIVER\all\PIS\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\Lab1B\obj\Debug\net6.0\Lab1B.GeneratedMSBuildEditorConfig.editorconfig
+D:\UNIVER\all\PIS\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\Lab1B\obj\Debug\net6.0\Lab1B.AssemblyInfoInputs.cache
+D:\UNIVER\all\PIS\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\Lab1B\obj\Debug\net6.0\Lab1B.AssemblyInfo.cs
+D:\UNIVER\all\PIS\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\Lab1B\obj\Debug\net6.0\Lab1B.csproj.CoreCompileInputs.cache
+D:\UNIVER\all\PIS\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\Lab1B\obj\Debug\net6.0\Lab1B.MvcApplicationPartsAssemblyInfo.cache
+D:\UNIVER\all\PIS\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\Lab1B\obj\Debug\net6.0\staticwebassets\msbuild.Lab1B.Microsoft.AspNetCore.StaticWebAssets.props
+D:\UNIVER\all\PIS\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\Lab1B\obj\Debug\net6.0\staticwebassets\msbuild.build.Lab1B.props
+D:\UNIVER\all\PIS\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\Lab1B\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Lab1B.props
+D:\UNIVER\all\PIS\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\Lab1B\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Lab1B.props
+D:\UNIVER\all\PIS\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\Lab1B\obj\Debug\net6.0\staticwebassets.pack.json
+D:\UNIVER\all\PIS\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\Lab1B\obj\Debug\net6.0\staticwebassets.build.json
+D:\UNIVER\all\PIS\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\Lab1B\obj\Debug\net6.0\staticwebassets.development.json
+D:\UNIVER\all\PIS\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\Lab1B\obj\Debug\net6.0\scopedcss\bundle\Lab1B.styles.css
+D:\UNIVER\all\PIS\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\Lab1B\obj\Debug\net6.0\Lab1B.csproj.CopyComplete
+D:\UNIVER\all\PIS\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\Lab1B\obj\Debug\net6.0\Lab1B.dll
+D:\UNIVER\all\PIS\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\Lab1B\obj\Debug\net6.0\refint\Lab1B.dll
+D:\UNIVER\all\PIS\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\Lab1B\obj\Debug\net6.0\Lab1B.pdb
+D:\UNIVER\all\PIS\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\Lab1B\obj\Debug\net6.0\Lab1B.genruntimeconfig.cache
+D:\UNIVER\all\PIS\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\Lab1B\obj\Debug\net6.0\ref\Lab1B.dll

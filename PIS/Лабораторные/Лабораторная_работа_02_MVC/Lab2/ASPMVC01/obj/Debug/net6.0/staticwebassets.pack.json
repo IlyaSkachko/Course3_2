@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\UNIVER\\all\\PIS\\Лабораторные\\Лабораторная_работа_02_MVC\\Lab2\\ASPMVC01\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ASPMVC01.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.ASPMVC01.props",
+      "PackagePath": "build\\ASPMVC01.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.ASPMVC01.props",
+      "PackagePath": "buildMultiTargeting\\ASPMVC01.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.ASPMVC01.props",
+      "PackagePath": "buildTransitive\\ASPMVC01.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

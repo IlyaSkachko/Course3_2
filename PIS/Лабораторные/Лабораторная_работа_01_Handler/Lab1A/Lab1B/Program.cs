@@ -2,7 +2,6 @@ using System.Net.WebSockets;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.WebHost.UseUrls("https://localhost:7222");
 var app = builder.Build();
 
 
@@ -18,7 +17,7 @@ app.Use(async (context, next) =>
         {
             WebSocket webSocket = await context.WebSockets.AcceptWebSocketAsync();
             await HandleWebSocketAsync(webSocket);
-        }
+        }  
         else
         {
             context.Response.StatusCode = 400;

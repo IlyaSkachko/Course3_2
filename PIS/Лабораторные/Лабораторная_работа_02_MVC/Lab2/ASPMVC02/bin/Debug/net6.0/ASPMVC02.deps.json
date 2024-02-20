@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ASPMVC02/1.0.0": {
+        "runtime": {
+          "ASPMVC02.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ASPMVC02/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

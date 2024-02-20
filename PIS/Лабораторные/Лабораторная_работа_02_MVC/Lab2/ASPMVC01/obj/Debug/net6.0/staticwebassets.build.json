@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "IRlDDnQUxDPoFpbDd4fNO0Ybid7sQGxZyHVugrVaRZ0=",
+  "Source": "ASPMVC01",
+  "BasePath": "_content/ASPMVC01",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ASPMVC01\\wwwroot",
+      "Source": "ASPMVC01",
+      "ContentRoot": "D:\\UNIVER\\all\\PIS\\Лабораторные\\Лабораторная_работа_02_MVC\\Lab2\\ASPMVC01\\wwwroot\\",
+      "BasePath": "_content/ASPMVC01",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\UNIVER\\all\\PIS\\Лабораторные\\Лабораторная_работа_02_MVC\\Lab2\\ASPMVC01\\wwwroot\\index.html",
+      "SourceId": "ASPMVC01",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\UNIVER\\all\\PIS\\Лабораторные\\Лабораторная_работа_02_MVC\\Lab2\\ASPMVC01\\wwwroot\\",
+      "BasePath": "_content/ASPMVC01",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
+}

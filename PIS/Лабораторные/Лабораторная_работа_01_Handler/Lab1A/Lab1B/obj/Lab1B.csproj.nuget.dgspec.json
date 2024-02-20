@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\UNIVER\\Программирование интернет-серверов\\Лабораторные\\Лабораторная_работа_01_Handler\\Lab1A\\Lab1B\\Lab1B.csproj": {}
+    "D:\\UNIVER\\all\\PIS\\Лабораторные\\Лабораторная_работа_01_Handler\\Lab1A\\Lab1B\\Lab1B.csproj": {}
   },
   "projects": {
-    "D:\\UNIVER\\Программирование интернет-серверов\\Лабораторные\\Лабораторная_работа_01_Handler\\Lab1A\\Lab1B\\Lab1B.csproj": {
+    "D:\\UNIVER\\all\\PIS\\Лабораторные\\Лабораторная_работа_01_Handler\\Lab1A\\Lab1B\\Lab1B.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\UNIVER\\Программирование интернет-серверов\\Лабораторные\\Лабораторная_работа_01_Handler\\Lab1A\\Lab1B\\Lab1B.csproj",
+        "projectUniqueName": "D:\\UNIVER\\all\\PIS\\Лабораторные\\Лабораторная_работа_01_Handler\\Lab1A\\Lab1B\\Lab1B.csproj",
         "projectName": "Lab1B",
-        "projectPath": "D:\\UNIVER\\Программирование интернет-серверов\\Лабораторные\\Лабораторная_работа_01_Handler\\Lab1A\\Lab1B\\Lab1B.csproj",
+        "projectPath": "D:\\UNIVER\\all\\PIS\\Лабораторные\\Лабораторная_работа_01_Handler\\Lab1A\\Lab1B\\Lab1B.csproj",
         "packagesPath": "C:\\Users\\ilyas\\.nuget\\packages\\",
-        "outputPath": "D:\\UNIVER\\Программирование интернет-серверов\\Лабораторные\\Лабораторная_работа_01_Handler\\Lab1A\\Lab1B\\obj\\",
+        "outputPath": "D:\\UNIVER\\all\\PIS\\Лабораторные\\Лабораторная_работа_01_Handler\\Lab1A\\Lab1B\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ilyas\\AppData\\Roaming\\NuGet\\NuGet.Config",

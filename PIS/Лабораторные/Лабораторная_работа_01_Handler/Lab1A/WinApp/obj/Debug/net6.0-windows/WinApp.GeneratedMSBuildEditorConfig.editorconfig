@@ -14,4 +14,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WinApp
-build_property.ProjectDir = D:\UNIVER\Программирование интернет-серверов\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\WinApp\
+build_property.ProjectDir = D:\UNIVER\all\PIS\Лабораторные\Лабораторная_работа_01_Handler\Lab1A\WinApp\

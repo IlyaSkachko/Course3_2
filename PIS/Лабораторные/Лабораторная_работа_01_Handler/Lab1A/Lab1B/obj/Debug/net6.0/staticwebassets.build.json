@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1lUyHt9JX4jsAipjLiXjgyAKEabZBfl1rHzPe0cfWvw=",
+  "Hash": "dgXU6bxXt7Kk5C4LZMRo6PSr1wR4nP6Y+QIhKX6nQ84=",
   "Source": "Lab1B",
   "BasePath": "_content/Lab1B",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Lab1B\\wwwroot",
       "Source": "Lab1B",
-      "ContentRoot": "D:\\UNIVER\\Программирование интернет-серверов\\Лабораторные\\Лабораторная_работа_01_Handler\\Lab1A\\Lab1B\\wwwroot\\",
+      "ContentRoot": "D:\\UNIVER\\all\\PIS\\Лабораторные\\Лабораторная_работа_01_Handler\\Lab1A\\Lab1B\\wwwroot\\",
       "BasePath": "_content/Lab1B",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\UNIVER\\Программирование интернет-серверов\\Лабораторные\\Лабораторная_работа_01_Handler\\Lab1A\\Lab1B\\wwwroot\\index.html",
+      "Identity": "D:\\UNIVER\\all\\PIS\\Лабораторные\\Лабораторная_работа_01_Handler\\Lab1A\\Lab1B\\wwwroot\\index.html",
       "SourceId": "Lab1B",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\UNIVER\\Программирование интернет-серверов\\Лабораторные\\Лабораторная_работа_01_Handler\\Lab1A\\Lab1B\\wwwroot\\",
+      "ContentRoot": "D:\\UNIVER\\all\\PIS\\Лабораторные\\Лабораторная_работа_01_Handler\\Lab1A\\Lab1B\\wwwroot\\",
       "BasePath": "_content/Lab1B",
       "RelativePath": "index.html",
       "AssetKind": "All",

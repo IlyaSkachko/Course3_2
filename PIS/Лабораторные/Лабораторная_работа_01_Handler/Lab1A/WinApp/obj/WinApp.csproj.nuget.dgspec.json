@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\UNIVER\\Программирование интернет-серверов\\Лабораторные\\Лабораторная_работа_01_Handler\\Lab1A\\WinApp\\WinApp.csproj": {}
+    "D:\\UNIVER\\all\\PIS\\Лабораторные\\Лабораторная_работа_01_Handler\\Lab1A\\WinApp\\WinApp.csproj": {}
   },
   "projects": {
-    "D:\\UNIVER\\Программирование интернет-серверов\\Лабораторные\\Лабораторная_работа_01_Handler\\Lab1A\\WinApp\\WinApp.csproj": {
+    "D:\\UNIVER\\all\\PIS\\Лабораторные\\Лабораторная_работа_01_Handler\\Lab1A\\WinApp\\WinApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\UNIVER\\Программирование интернет-серверов\\Лабораторные\\Лабораторная_работа_01_Handler\\Lab1A\\WinApp\\WinApp.csproj",
+        "projectUniqueName": "D:\\UNIVER\\all\\PIS\\Лабораторные\\Лабораторная_работа_01_Handler\\Lab1A\\WinApp\\WinApp.csproj",
         "projectName": "WinApp",
-        "projectPath": "D:\\UNIVER\\Программирование интернет-серверов\\Лабораторные\\Лабораторная_работа_01_Handler\\Lab1A\\WinApp\\WinApp.csproj",
+        "projectPath": "D:\\UNIVER\\all\\PIS\\Лабораторные\\Лабораторная_работа_01_Handler\\Lab1A\\WinApp\\WinApp.csproj",
         "packagesPath": "C:\\Users\\ilyas\\.nuget\\packages\\",
-        "outputPath": "D:\\UNIVER\\Программирование интернет-серверов\\Лабораторные\\Лабораторная_работа_01_Handler\\Lab1A\\WinApp\\obj\\",
+        "outputPath": "D:\\UNIVER\\all\\PIS\\Лабораторные\\Лабораторная_работа_01_Handler\\Lab1A\\WinApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ilyas\\AppData\\Roaming\\NuGet\\NuGet.Config",

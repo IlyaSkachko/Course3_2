@@ -1,46 +1,66 @@
 
-using Microsoft.AspNetCore.Mvc.RazorPages;
-using System.Xml.Linq;
+
+using Microsoft.Extensions.Primitives;
 
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
 
-app.MapGet("/SIA", async (context) =>
+app.MapGet("/{name}.SIA", async (context) =>
 {
     var parmA = context.Request.Query["ParmA"];
     var parmB = context.Request.Query["ParmB"];
 
-    string response = $"GET-Http-SIA: ParmA = {parmA}, ParmB = {parmB}";
+    string response;
+    if( !StringValues.IsNullOrEmpty(parmA) && !StringValues.IsNullOrEmpty(parmB))
+    {
+        response = $"GET-Http-SIA: ParmA = {parmA}, ParmB = {parmB}";
+    }
+    else
+    {
+        response = $"GET-Http-SIA: Parameters not provided";
+    }
+    context.Response.ContentType = "text/plain";
+
+    await context.Response.WriteAsync(response);
+});
+
+app.MapPost("/{name}.SIA", async (context) =>
+{
+    var parmA = context.Request.Query["ParmA"];
+    var parmB = context.Request.Query["ParmB"];
+
+    string response;
+
+    if (!StringValues.IsNullOrEmpty(parmA) && !StringValues.IsNullOrEmpty(parmB))
+    {
+        response = $"POST-Http-SIA: ParmA = {parmA}, ParmB = {parmB}";
+    }
+    else
+    {
+        response = $"POST-Http-SIA: Parameters not provided";
+    }
 
     context.Response.ContentType = "text/plain";
 
     await context.Response.WriteAsync(response);
 });
 
-
-app.MapPost("/SIA", async (context) =>
+app.MapPut("/{name}.SIA", async (context) =>
 {
-    var parms = await context.Request.ReadFormAsync();
+    var parmA = context.Request.Query["ParmA"];
+    var parmB = context.Request.Query["ParmB"];
 
-    var parmA = parms["ParmA"];
-    var parmB = parms["ParmB"];
+    string response;
 
-    string response = $"POST-Http-SIA: ParmA = {parmA}, ParmB = {parmB}";
-
-    context.Response.ContentType = "text/plain";
-
-    await context.Response.WriteAsync(response);
-});
-
-app.MapPut("/SIA", async (context) =>
-{
-    var parms = await context.Request.ReadFormAsync();
-
-    var parmA = parms["ParmA"];
-    var parmB = parms["ParmB"];
-
-    string response = $"PUT-Http-SIA: ParmA = {parmA}, ParmB = {parmB}";
+    if (!StringValues.IsNullOrEmpty(parmA) && !StringValues.IsNullOrEmpty(parmB))
+    {
+        response = $"PUT-Http-SIA: ParmA = {parmA}, ParmB = {parmB}";
+    }
+    else
+    {
+        response = $"PUT-Http-SIA: Parameters not provided";
+    }
 
     context.Response.ContentType = "text/plain";
 

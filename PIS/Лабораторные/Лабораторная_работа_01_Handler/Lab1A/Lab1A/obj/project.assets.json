@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\UNIVER\\Программирование интернет-серверов\\Лабораторные\\Лабораторная_работа_01_Handler\\Lab1A\\Lab1A\\Lab1A.csproj",
+      "projectUniqueName": "D:\\UNIVER\\all\\PIS\\Лабораторные\\Лабораторная_работа_01_Handler\\Lab1A\\Lab1A\\Lab1A.csproj",
       "projectName": "Lab1A",
-      "projectPath": "D:\\UNIVER\\Программирование интернет-серверов\\Лабораторные\\Лабораторная_работа_01_Handler\\Lab1A\\Lab1A\\Lab1A.csproj",
+      "projectPath": "D:\\UNIVER\\all\\PIS\\Лабораторные\\Лабораторная_работа_01_Handler\\Lab1A\\Lab1A\\Lab1A.csproj",
       "packagesPath": "C:\\Users\\ilyas\\.nuget\\packages\\",
-      "outputPath": "D:\\UNIVER\\Программирование интернет-серверов\\Лабораторные\\Лабораторная_работа_01_Handler\\Lab1A\\Lab1A\\obj\\",
+      "outputPath": "D:\\UNIVER\\all\\PIS\\Лабораторные\\Лабораторная_работа_01_Handler\\Lab1A\\Lab1A\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ilyas\\AppData\\Roaming\\NuGet\\NuGet.Config",
