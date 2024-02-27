@@ -1,0 +1,15 @@
+D:\UNIVER\all\IB\Lab2\Lab2\Converter\obj\Debug\net8.0\Converter.GeneratedMSBuildEditorConfig.editorconfig
+D:\UNIVER\all\IB\Lab2\Lab2\Converter\obj\Debug\net8.0\Converter.AssemblyInfoInputs.cache
+D:\UNIVER\all\IB\Lab2\Lab2\Converter\obj\Debug\net8.0\Converter.AssemblyInfo.cs
+D:\UNIVER\all\IB\Lab2\Lab2\Converter\obj\Debug\net8.0\Converter.csproj.CoreCompileInputs.cache
+D:\UNIVER\all\IB\Lab2\Lab2\Converter\obj\Debug\net8.0\Converter.sourcelink.json
+D:\UNIVER\all\IB\Lab2\Lab2\Converter\bin\Debug\net8.0\Converter.exe
+D:\UNIVER\all\IB\Lab2\Lab2\Converter\bin\Debug\net8.0\Converter.deps.json
+D:\UNIVER\all\IB\Lab2\Lab2\Converter\bin\Debug\net8.0\Converter.runtimeconfig.json
+D:\UNIVER\all\IB\Lab2\Lab2\Converter\bin\Debug\net8.0\Converter.dll
+D:\UNIVER\all\IB\Lab2\Lab2\Converter\bin\Debug\net8.0\Converter.pdb
+D:\UNIVER\all\IB\Lab2\Lab2\Converter\obj\Debug\net8.0\Converter.dll
+D:\UNIVER\all\IB\Lab2\Lab2\Converter\obj\Debug\net8.0\refint\Converter.dll
+D:\UNIVER\all\IB\Lab2\Lab2\Converter\obj\Debug\net8.0\Converter.pdb
+D:\UNIVER\all\IB\Lab2\Lab2\Converter\obj\Debug\net8.0\Converter.genruntimeconfig.cache
+D:\UNIVER\all\IB\Lab2\Lab2\Converter\obj\Debug\net8.0\ref\Converter.dll

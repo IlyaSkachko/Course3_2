@@ -3,6 +3,7 @@
 // Латиница - Мальтийский
 
 
+using System.Security.Cryptography;
 using System.Text;
 
 class Program
@@ -10,17 +11,46 @@ class Program
     static void Main()
     {
 
+        //Lab1();
+        Lab2();
+    }
+
+    private static void Lab2()
+    {
+        string base64Text = File.ReadAllText("D:\\UNIVER\\all\\IB\\Lab2\\base64.txt");
+
+        double base64Entropy = CalculateEntropy(base64Text.ToLower());
+        double base64HatrlyEntropy = HartlyEntropy(base64Text.ToLower());
+        Console.WriteLine($"Энтропия Шеннона Base64: {base64Entropy}");
+        Console.WriteLine($"Энтропия Хартли Base64: {base64HatrlyEntropy}");
+        Console.WriteLine($"Избыточность Base64: {(base64HatrlyEntropy - base64Entropy) / base64HatrlyEntropy}");
+
+        Console.WriteLine("\n\n\n");
+
+        string malteseText = File.ReadAllText("D:\\UNIVER\\all\\IB\\Lab2\\maltese.txt");
+
+        double malteseEntropy = CalculateEntropy(malteseText.ToLower());
+        double malteseHartlyEntropy = HartlyEntropy(malteseText.ToLower());
+        Console.WriteLine($"Энтропия Шеннона мальтийского сообщения: {malteseEntropy}");
+        Console.WriteLine($"Энтропия Хартли мальтийского сообщения: {malteseHartlyEntropy}");
+        Console.WriteLine($"Избыточность мальтийского сообщения: {(malteseHartlyEntropy - malteseEntropy)/malteseHartlyEntropy}");
+
+        Console.WriteLine("\n\n");
+    }
+
+    private static void Lab1()
+    {
         #region Task A
 
 
-        string tajikText = File.ReadAllText("D:\\UNIVER\\all\\IB\\Lab1\\Lab1\\tajik.txt"); 
+        string tajikText = File.ReadAllText("D:\\UNIVER\\all\\IB\\Lab1\\Lab1\\tajik.txt");
 
         double tajikEntropy = CalculateEntropy(tajikText.ToLower());
         Console.WriteLine($"Энтропия таджикского сообщения: {tajikEntropy}");
 
         Console.WriteLine("\n\n\n");
 
-        string malteseText = File.ReadAllText("D:\\UNIVER\\all\\IB\\Lab1\\Lab1\\maltese.txt"); 
+        string malteseText = File.ReadAllText("D:\\UNIVER\\all\\IB\\Lab1\\Lab1\\maltese.txt");
 
         double malteseEntropy = CalculateEntropy(malteseText.ToLower());
         Console.WriteLine($"Энтропия мальтийского сообщения: {malteseEntropy}");
@@ -113,8 +143,39 @@ class Program
         Console.WriteLine($"Количество информации на основе бинарного сообщения(вероятность ошибки = {p2}): {AmountInfoWithError(binaryEntropy, p2, 1 - p2, fio.Length * 8, true)}");
         Console.WriteLine($"Количество информации на основе бинарного сообщения(вероятность ошибки = {p3}): {AmountInfoWithError(binaryEntropy, p3, 1 - p3, fio.Length * 8, true)}");
 
+
+        Console.WriteLine($"Количество информации в ФИО (Skachko Ilya Alexandrovich) при ошибочной вероятности = 0,6: {AmountInfoWithError(CalculateEntropy(fio), 0.6, 0.4, fio.Length, false)}");
+
         #endregion
     }
+
+    static double HartlyEntropy(string s)
+    {
+        int col = 0;
+        double entropy = 0;
+        var charFrequencies = new Dictionary<char, int>();
+
+        foreach (char c in s)
+        {
+            if (char.IsLetter(c) || char.IsDigit(c))
+            {
+                if (!charFrequencies.ContainsKey(c))
+                    charFrequencies.Add(c, 1);
+                else
+                    charFrequencies[c]++;
+            }
+        }
+
+        foreach (char c in charFrequencies.Keys)
+        {
+            col += 1;
+        }
+
+        entropy = Math.Log(col, 2);
+
+        return entropy;
+    }
+
 
     static double CalculateEntropy(string s)
     {
@@ -134,6 +195,8 @@ class Program
             }
         }
 
+        OutputDictionary(charFrequencies);
+
         double entropy = default;
         foreach (var с in charFrequencies)
         {
@@ -143,6 +206,15 @@ class Program
 
         return entropy; 
     }
+
+    private static void OutputDictionary(Dictionary<char, int> values)
+    {
+        foreach(var v in values)
+        {
+            Console.WriteLine(v.Key + ": " + v.Value);
+        }
+    }
+
 
     static double AmountInfoWithError(double entropy, double p, double q, int count, bool binary)
     {
