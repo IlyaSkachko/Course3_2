@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lab2 - Sequelize</title>
+    </head>
+    <body>
+        <p>TEACHER</p>
+        <input id="teacher" type="text" />
+        <p>TEACHER_NAME</p>
+        <input id="teacher_name" type="text"  />
+        <p>PULPIT</p> <input id="pulpit" type="text" />
+
+        <p id="errors" ></p>
+        <button onclick="Get()">Get</button>
+        <button onclick="Post()">Post</button>
+        <button onclick="Put()">Put</button>
+        <button onclick="Delete()">Delete</button>
+
+        <div id="result"></div>
+    </body>
+</html>
+
+<script>
+    async function Get() {
+        const resp = await fetch("http://localhost:3000/api/teachers", {
+            method: "GET",
+        });
+        var data = await resp.json();
+        const result = document.getElementById("result");
+        result.innerHTML = JSON.stringify(data);
+    }
+
+    async function Post() {
+        const teacher = document.getElementById("teacher").value;
+        const teacher_name = document.getElementById("teacher_name").value;
+        const pulpit = document.getElementById("pulpit").value;
+        const obj = {
+            TEACHER: teacher,
+            TEACHER_NAME: teacher_name,
+            PULPIT: pulpit,
+        };
+        const resp = await fetch("http://localhost:3000/api/teachers", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(obj),
+        });
+        const data = resp.json();
+        data.then((newdata) => {
+            const result = JSON.stringify(newdata);
+            const error = document.getElementById("errors");
+            error.innerHTML = result;
+        });
+        Get();
+    }
+
+    async function Put() {
+        const teacher = document.getElementById("teacher").value;
+        const teacher_name = document.getElementById("teacher_name").value;
+        const pulpit = document.getElementById("pulpit").value;
+        const obj = {
+            TEACHER: teacher,
+            TEACHER_NAME: teacher_name,
+            PULPIT: pulpit,
+        };
+        const resp = await fetch("http://localhost:3000/api/teachers", {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(obj),
+        });
+        const data = resp.json();
+        data.then((newdata) => {
+            const result = JSON.stringify(newdata);
+            const error = document.getElementById("errors");
+            error.innerHTML = result;
+        });
+        Get();
+    }
+
+    async function Delete() {
+        const teacher = document.getElementById("teacher").value;
+        const error = document.getElementById("errors");
+        const resp = await fetch(
+            `http://localhost:3000/api/teachers/${teacher}`,
+            {
+                method: "DELETE",
+            }
+        );
+        const data = resp.json();
+        data.then((newdata) => {
+            const result = JSON.stringify(newdata);
+            const error = document.getElementById("errors");
+            error.innerHTML = result;
+        });
+        Get();
+    }
+</script>

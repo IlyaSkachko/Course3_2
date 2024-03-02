@@ -1,0 +1,22 @@
+
+//? -------------- POST -------------------
+
+{"FACULTY":"myfaculty","FACULTY_NAME":"myfaculty"}
+{"PULPIT":"mypulpit","PULPIT_NAME":"mypulpit","FACULTY":"myfaculty"}
+{"SUBJECT":"mysubject","SUBJECT_NAME":"mysubject","PULPIT":"mypulpit"}
+{"TEACHER":"myteacher","TEACHER_NAME":"myteacher","PULPIT":"mypulpit"}
+{"AUDITORIUM_TYPE":"mytype","AUDITORIUM_TYPENAME":"mytype"}
+{"AUDITORIUM":"myauditor","AUDITORIUM_NAME":"myauditor","AUDITORIUM_CAPACITY":"60","AUDITORIUM_TYPE":"ЛК"}
+
+
+
+//? ---------------- PUT  -------------------
+
+{"FACULTY":"myfaculty","FACULTY_NAME":"myfaculty123"}
+{"PULPIT":"mypulpit","PULPIT_NAME":"mypulpit123","FACULTY":"myfaculty"}
+{"SUBJECT":"mysubject","SUBJECT_NAME":"mysubject123","PULPIT":"mypulpit"}
+{"TEACHER":"myteacher","TEACHER_NAME":"myteacher123","PULPIT":"mypulpit"}
+{"AUDITORIUM_TYPE":"mytype","AUDITORIUM_TYPENAME":"mytype123"}
+{"AUDITORIUM":"myauditor","AUDITORIUM_NAME":"myauditor123","AUDITORIUM_CAPACITY":"60","AUDITORIUM_TYPE":"ЛК"}
+
+
