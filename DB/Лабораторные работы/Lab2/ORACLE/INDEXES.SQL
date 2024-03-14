@@ -1,0 +1,17 @@
+CREATE INDEX idx_users_name ON USERS(NAME);
+
+CREATE INDEX idx_test_cases_title ON TEST_CASES(TITLE);
+
+CREATE INDEX idx_steps_step ON STEPS(STEP);
+
+CREATE INDEX idx_test_case_statuses_status ON TEST_CASE_STATUSES(STATUS);
+
+CREATE INDEX idx_test_suites_title ON TEST_SUITES(TITLE);
+
+CREATE INDEX idx_apps_name ON APPS(NAME);
+
+CREATE INDEX idx_defects_description ON DEFECTS(DESCRIPTION);
+
+CREATE INDEX idx_defect_statuses_status ON DEFECT_STATUSES(STATUS);
+
+CREATE INDEX idx_test_runs_result ON TEST_RUNS(RESULT);
