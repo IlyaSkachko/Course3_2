@@ -1,11 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lab14</title>
+        <style>
+            .info {
+                max-width: 70%;
+                margin: 0 auto;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            th,
+            td {
+                padding: 8px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+
+            .btns {
+                margin: 0 auto;
+                padding-top: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="info">
+            <table>
+                <thead>
+                    <tr>
+                        <th>TEACHER COUNT</th>
+                        <th>PULPIT</th>
+                        <th>PULPIT NAME</th>
+                        <th>FACULTY</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div class="btns">
+                <button onclick="previous()" id="previousButton"><=</button>
+                <a href="" class="pageNumber"></a>
+                <button onclick="next()" id="nextButton">=></button>
+            </div>
+        </div>
+
+        <script>
+            let page = 1;
+            let hasNextPage = true;
+            let hasPreviousPage = false;
+
+            function next() {
+                if (hasNextPage) {
+                    page++;
+                    get();
+                }
+            }
+
+            function previous() {
+                if (hasPreviousPage) {
+                    page--;
+                    get();
+                }
+            }
+
+            function get() {
+    const xhr = new XMLHttpRequest();
+    const tbody = document.querySelector(".info tbody");
+    const previousButton = document.getElementById("previousButton");
+    const nextButton = document.getElementById("nextButton");
+
+    tbody.innerHTML = "";
+
+    xhr.open("GET", `/task4?page=${page}`);
+    xhr.send();
+
+    xhr.onload = function () {
+        if (xhr.status === 200) {
+            const responseData = JSON.parse(xhr.responseText);
+            const tbody = document.querySelector(".info tbody");
+            tbody.innerHTML = ""; // Очищаем tbody перед добавлением новых данных
+
+            responseData.forEach((obj) => {
+                const row = document.createElement("tr");
+
+                const pulpitsCount = obj._count.TEACHER_TEACHER_PULPITToPULPIT;
+
+                const pulpitsCountCell = document.createElement("td");
+                pulpitsCountCell.textContent = pulpitsCount;
+                row.appendChild(pulpitsCountCell);
+
+                delete obj._count; // Удаляем _count из остальных данных
+
+                for (const key in obj) {
+                    const td = document.createElement("td");
+                    td.textContent = obj[key];
+                    row.appendChild(td);
+                }
+
+                tbody.appendChild(row);
+            });
+
+            const pageNumber = document.querySelector(".pageNumber");
+            pageNumber.innerHTML = `${page}`;
+
+            hasNextPage = responseData.length > 0;
+            hasPreviousPage = page > 1;
+
+            nextButton.disabled = !hasNextPage;
+            previousButton.disabled = !hasPreviousPage;
+        } else {
+            console.error("Error:", xhr.status);
+        }
+    };
+}
+
+            get();
+        </script>
+    </body>
 </html>

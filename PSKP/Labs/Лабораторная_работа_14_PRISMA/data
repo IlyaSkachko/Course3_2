@@ -1,0 +1,47 @@
+{
+  "FACULTY": "faculty1",
+  "FACULTY_NAME": "Faculty 1",
+  "PULPITS": [
+    {
+      "PULPIT": "pulpit1",
+      "PULPIT_NAME": "Pulpit 1"
+    },
+    {
+      "PULPIT": "pulpit2",
+      "PULPIT_NAME": "Pulpit 2"
+    }
+  ]
+}
+
+{
+  "FACULTY": "ИЭФ",
+  "FACULTY_NAME": "Инженерно-экономический факультет",
+  "PULPIT": "pulpit1",
+  "PULPIT_NAME": "Pulpit 1"
+}
+
+
+{
+  "SUBJECT": "SUBJECT",
+  "SUBJECT_NAME": "SUBJECT_NAME",
+  "PULPIT": "pulpit1"
+}
+
+
+{
+  "TEACHER": "TEACHER",
+  "TEACHER_NAME": "TEACHER_NAME",
+  "PULPIT": "pulpit1"
+}
+
+{
+  "AUDITORIUM_TYPE": "TYPE",
+  "AUDITORIUM_TYPENAME": "TYPE"
+}
+
+{
+  "AUDITORIUM": "AUDIT",
+  "AUDITORIUM_NAME": "AUDIT",
+    "AUDITORIUM_CAPACITY": 90,
+  "AUDITORIUM_TYPE": "TYPE"
+}
