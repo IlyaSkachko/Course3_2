@@ -1,0 +1,75 @@
+SELECT
+  TO_CHAR(TR.DATE_START, 'MM') AS "Month",
+  TO_CHAR(TR.DATE_START, 'Q') AS "Quarter",
+  CASE
+    WHEN TO_CHAR(TR.DATE_START, 'MM') <= '06' THEN 1
+    ELSE 2
+  END AS "HalfYear",
+  TO_CHAR(TR.DATE_START, 'YYYY') AS "Year",
+  COUNT(*) OVER (PARTITION BY TO_CHAR(TR.DATE_START, 'MM'), TO_CHAR(TR.DATE_START, 'YYYY')) AS "MonthCount",
+  COUNT(*) OVER (PARTITION BY TO_CHAR(TR.DATE_START, 'Q'), TO_CHAR(TR.DATE_START, 'YYYY')) AS "QuarterCount",
+  COUNT(*) OVER (PARTITION BY CASE WHEN TO_CHAR(TR.DATE_START, 'MM') <= '06' THEN 1 ELSE 2 END, TO_CHAR(TR.DATE_START, 'YYYY')) AS "HalfYearCount",
+  COUNT(*) OVER (PARTITION BY TO_CHAR(TR.DATE_START, 'YYYY')) AS "YearCount"
+FROM TEST_RUNS TR;
+
+--?????????? ?????? ?????? ????????????? ?? ???????????? ??????:
+--•	????? ??????????? ??????;
+--•	????????? ?? ? ????? ??????? ?????????? ?????? (? %);
+--•	????????? ? ????????? ??????? ?????????? ?????? (? %).
+
+SELECT
+    USER_ID,
+    COUNT(*) AS TESTS_COMPLETED,
+    SUM(COUNT(*)) OVER () AS TOTAL_TESTS,
+    CAST(COUNT(*) AS FLOAT) / SUM(COUNT(*)) OVER () * 100 AS PERCENT_OF_TOTAL,
+    CAST(COUNT(*) AS FLOAT) / MAX(COUNT(*)) OVER () * 100 AS PERCENT_OF_BEST
+FROM
+    TEST_RUNS
+WHERE
+    DATE_START >= TO_DATE('2025-01-01', 'YYYY-MM-DD') AND DATE_END <= TO_DATE('2029-12-31', 'YYYY-MM-DD')
+GROUP BY
+    USER_ID;
+
+
+--??????? ??? ??????? user ?????????? ?????????? ?????? ?? ????????? 6 ??????? ?????????.
+
+SELECT 
+    USER_ID,
+    EXTRACT(YEAR FROM DATE_START) AS YEAR,
+    EXTRACT(MONTH FROM DATE_START) AS MONTH,
+    COUNT(*) OVER (PARTITION BY USER_ID, EXTRACT(YEAR FROM DATE_START), EXTRACT(MONTH FROM DATE_START)) AS TESTS_COMPLETED
+FROM 
+    TEST_RUNS
+WHERE 
+    DATE_START <= TO_DATE('2025-06-30', 'YYYY-MM-DD')
+ORDER BY 
+    USER_ID,
+    YEAR,
+    MONTH;
+
+
+SELECT
+    TEST_CASE_ID,
+    USER_ID,
+    TESTS_COMPLETED
+FROM
+    (SELECT
+        TEST_CASE_ID,
+        USER_ID,
+        TESTS_COMPLETED,
+        ROW_NUMBER() OVER (PARTITION BY TEST_CASE_ID ORDER BY TESTS_COMPLETED DESC) AS RN
+    FROM
+        (SELECT
+            TEST_CASE_ID,
+            USER_ID,
+            COUNT(*) OVER (PARTITION BY TEST_CASE_ID, USER_ID) AS TESTS_COMPLETED
+         FROM
+            TEST_RUNS
+        ) SUBQUERY
+    ) SUBQUERY2
+WHERE
+    RN = 1;
+
+
+
+

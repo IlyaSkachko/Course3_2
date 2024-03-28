@@ -15,7 +15,7 @@ SELECT
   COUNT(*) OVER (PARTITION BY DATEPART(YEAR, TR.DATE_START)) AS [YearCount]
 FROM TEST_RUNS TR;
 
-
+select * from TEST_RUNS;
 
 --Вычисление итогов работы пользователей за определенный период:
 --•	объем выполненных тестов;
@@ -47,7 +47,7 @@ SELECT
 FROM 
     TEST_RUNS
 WHERE 
-    DATE_START >= DATEADD(MONTH, -6, CAST('2025-06-30' AS DATE)) AND DATE_START <= CAST('2025-06-30' AS DATE)
+	DATE_START <= CAST('2025-06-30' AS DATE)
 ORDER BY 
     USER_ID,
     YEAR,
